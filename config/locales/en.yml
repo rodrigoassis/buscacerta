@@ -3,3 +3,7 @@
 
 en:
   hello: "Hello world"
+  misc:
+    colecao:
+      one: 1 colecao
+      other: %{count} colecoes

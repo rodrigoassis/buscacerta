@@ -7,6 +7,10 @@ gem 'rails', '3.0.9'
 
 gem 'sqlite3'
 
+gem "paperclip"
+
+gem 'activeadmin', '0.3.2'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
