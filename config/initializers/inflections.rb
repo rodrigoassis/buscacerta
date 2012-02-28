@@ -9,4 +9,5 @@ ActiveSupport::Inflector.inflections do |inflect|
 #   inflect.uncountable %w( fish sheep )
     inflect.irregular 'categoria', 'categorias'
     inflect.irregular 'imagem', 'imagens'
+    inflect.irregular 'vendedor', 'vendedores'
 end

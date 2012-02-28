@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120214134600) do
+ActiveRecord::Schema.define(:version => 20120228142047) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.integer  "resource_id",   :null => false
@@ -34,6 +34,16 @@ ActiveRecord::Schema.define(:version => 20120214134600) do
     t.integer  "pai_id"
   end
 
+  create_table "produtos", :force => true do |t|
+    t.string   "modelo"
+    t.text     "descricao"
+    t.decimal  "preco"
+    t.integer  "vendedor_id"
+    t.integer  "categoria_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "usuarios", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
     t.string   "encrypted_password",     :limit => 128, :default => "", :null => false
@@ -51,5 +61,11 @@ ActiveRecord::Schema.define(:version => 20120214134600) do
 
   add_index "usuarios", ["email"], :name => "index_usuarios_on_email", :unique => true
   add_index "usuarios", ["reset_password_token"], :name => "index_usuarios_on_reset_password_token", :unique => true
+
+  create_table "vendedores", :force => true do |t|
+    t.string   "nome"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  modelo: MyString
+  descricao: MyText
+  preco: 9.99
+  vendedor_id: 1
+
+two:
+  modelo: MyString
+  descricao: MyText
+  preco: 9.99
+  vendedor_id: 1
